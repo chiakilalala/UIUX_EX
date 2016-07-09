@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title></title>
+
+
+			<style>
+
+				@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+				*,
+				*:before,
+				*:after{
+
+					box-sizing:border-box;
+				}
+
+				html{
+					height: 100%;
+				}
+
+				body{
+					background: url(http://i.imgur.com/CZdBKjO.gif) no-repeat center center fixed;
+					background-size: cover;
+					font-family: 'Raleway',sans-serif;
+					background-color: #342643;
+					height: 100%;
+
+				}
+
+				.text-wrapper{
+					height: 100%;
+					display: -webkit-box;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flexbox;
+					display: -o-flex;
+					display: flex;
+					-webkit-box-orient:vertical;
+					-webkit-box-direction:normal;
+					-webkit-flex-direction:column;
+					-ms-flex-direction:column;
+					flex-direction:column;
+
+					-webkit-box-align:center;
+					-webkit-align-items:center;
+					-ms-flex-align:center;
+					align-items:center;
+					-webkit-box-pack:center;
+					-ms-flex-pack:center;
+					justify-content: center;
+				}
+.title{
+	font-size: 9em;
+	font-weight: 700;
+	color:white;
+	position: relative;
+	
+}
+.subtitle{
+
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+	position:relative;
+
+}			
+.buttons{
+	margin: 30px;
+}
+.buttons a.button{
+	background-color: #342643;
+
+	color:white;
+	font-weight: 700;
+	border:2px solid white;
+	text-decoration: none;
+	padding: 15px;
+	text-transform: uppercase;
+	border-radius: 26px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.buttons a.button:hover{
+
+	background-color: #aaa;
+	color:white;
+	-webkit-transition: all 0.2s ease-in-out;
+	 transition: all 0.2s ease-in-out;
+}
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(149px, 9999px, 153px, 0);
+  }
+  5% {
+    clip: rect(147px, 9999px, 74px, 0);
+  }
+  10% {
+    clip: rect(70px, 9999px, 131px, 0);
+  }
+  15% {
+    clip: rect(173px, 9999px, 195px, 0);
+  }
+  20% {
+    clip: rect(182px, 9999px, 95px, 0);
+  }
+  25% {
+    clip: rect(62px, 9999px, 5px, 0);
+  }
+  30% {
+    clip: rect(23px, 9999px, 188px, 0);
+  }
+  35% {
+    clip: rect(92px, 9999px, 154px, 0);
+  }
+  40% {
+    clip: rect(9px, 9999px, 200px, 0);
+  }
+  45% {
+    clip: rect(189px, 9999px, 102px, 0);
+  }
+  50% {
+    clip: rect(147px, 9999px, 156px, 0);
+  }
+  55% {
+    clip: rect(84px, 9999px, 148px, 0);
+  }
+  60% {
+    clip: rect(162px, 9999px, 74px, 0);
+  }
+  65% {
+    clip: rect(79px, 9999px, 168px, 0);
+  }
+  70% {
+    clip: rect(115px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(37px, 9999px, 185px, 0);
+  }
+  80% {
+    clip: rect(169px, 9999px, 191px, 0);
+  }
+  85% {
+    clip: rect(44px, 9999px, 15px, 0);
+  }
+  90% {
+    clip: rect(38px, 9999px, 130px, 0);
+  }
+  95% {
+    clip: rect(93px, 9999px, 120px, 0);
+  }
+  100% {
+    clip: rect(22px, 9999px, 169px, 0);
+  }
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(149px, 9999px, 153px, 0);
+  }
+  5% {
+    clip: rect(147px, 9999px, 74px, 0);
+  }
+  10% {
+    clip: rect(70px, 9999px, 131px, 0);
+  }
+  15% {
+    clip: rect(173px, 9999px, 195px, 0);
+  }
+  20% {
+    clip: rect(182px, 9999px, 95px, 0);
+  }
+  25% {
+    clip: rect(62px, 9999px, 5px, 0);
+  }
+  30% {
+    clip: rect(23px, 9999px, 188px, 0);
+  }
+  35% {
+    clip: rect(92px, 9999px, 154px, 0);
+  }
+  40% {
+    clip: rect(9px, 9999px, 200px, 0);
+  }
+  45% {
+    clip: rect(189px, 9999px, 102px, 0);
+  }
+  50% {
+    clip: rect(147px, 9999px, 156px, 0);
+  }
+  55% {
+    clip: rect(84px, 9999px, 148px, 0);
+  }
+  60% {
+    clip: rect(162px, 9999px, 74px, 0);
+  }
+  65% {
+    clip: rect(79px, 9999px, 168px, 0);
+  }
+  70% {
+    clip: rect(115px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(37px, 9999px, 185px, 0);
+  }
+  80% {
+    clip: rect(169px, 9999px, 191px, 0);
+  }
+  85% {
+    clip: rect(44px, 9999px, 15px, 0);
+  }
+  90% {
+    clip: rect(38px, 9999px, 130px, 0);
+  }
+  95% {
+    clip: rect(93px, 9999px, 120px, 0);
+  }
+  100% {
+    clip: rect(22px, 9999px, 169px, 0);
+  }
+}
+.subtitle:after,
+.title:after {
+  content: attr(data-content);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
+          animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(33px, 9999px, 64px, 0);
+  }
+  5% {
+    clip: rect(106px, 9999px, 7px, 0);
+  }
+  10% {
+    clip: rect(84px, 9999px, 81px, 0);
+  }
+  15% {
+    clip: rect(88px, 9999px, 9px, 0);
+  }
+  20% {
+    clip: rect(114px, 9999px, 27px, 0);
+  }
+  25% {
+    clip: rect(112px, 9999px, 67px, 0);
+  }
+  30% {
+    clip: rect(73px, 9999px, 170px, 0);
+  }
+  35% {
+    clip: rect(102px, 9999px, 44px, 0);
+  }
+  40% {
+    clip: rect(130px, 9999px, 31px, 0);
+  }
+  45% {
+    clip: rect(148px, 9999px, 103px, 0);
+  }
+  50% {
+    clip: rect(155px, 9999px, 92px, 0);
+  }
+  55% {
+    clip: rect(66px, 9999px, 185px, 0);
+  }
+  60% {
+    clip: rect(147px, 9999px, 112px, 0);
+  }
+  65% {
+    clip: rect(26px, 9999px, 31px, 0);
+  }
+  70% {
+    clip: rect(50px, 9999px, 170px, 0);
+  }
+  75% {
+    clip: rect(89px, 9999px, 156px, 0);
+  }
+  80% {
+    clip: rect(73px, 9999px, 3px, 0);
+  }
+  85% {
+    clip: rect(120px, 9999px, 133px, 0);
+  }
+  90% {
+    clip: rect(55px, 9999px, 177px, 0);
+  }
+  95% {
+    clip: rect(119px, 9999px, 62px, 0);
+  }
+  100% {
+    clip: rect(14px, 9999px, 16px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(33px, 9999px, 64px, 0);
+  }
+  5% {
+    clip: rect(106px, 9999px, 7px, 0);
+  }
+  10% {
+    clip: rect(84px, 9999px, 81px, 0);
+  }
+  15% {
+    clip: rect(88px, 9999px, 9px, 0);
+  }
+  20% {
+    clip: rect(114px, 9999px, 27px, 0);
+  }
+  25% {
+    clip: rect(112px, 9999px, 67px, 0);
+  }
+  30% {
+    clip: rect(73px, 9999px, 170px, 0);
+  }
+  35% {
+    clip: rect(102px, 9999px, 44px, 0);
+  }
+  40% {
+    clip: rect(130px, 9999px, 31px, 0);
+  }
+  45% {
+    clip: rect(148px, 9999px, 103px, 0);
+  }
+  50% {
+    clip: rect(155px, 9999px, 92px, 0);
+  }
+  55% {
+    clip: rect(66px, 9999px, 185px, 0);
+  }
+  60% {
+    clip: rect(147px, 9999px, 112px, 0);
+  }
+  65% {
+    clip: rect(26px, 9999px, 31px, 0);
+  }
+  70% {
+    clip: rect(50px, 9999px, 170px, 0);
+  }
+  75% {
+    clip: rect(89px, 9999px, 156px, 0);
+  }
+  80% {
+    clip: rect(73px, 9999px, 3px, 0);
+  }
+  85% {
+    clip: rect(120px, 9999px, 133px, 0);
+  }
+  90% {
+    clip: rect(55px, 9999px, 177px, 0);
+  }
+  95% {
+    clip: rect(119px, 9999px, 62px, 0);
+  }
+  100% {
+    clip: rect(14px, 9999px, 16px, 0);
+  }
+}
+.subtitle:before,
+.title:before {
+  content: attr(data-content);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
+          animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+			</style>
+		</head>
+		<body>
+			<div class="text-wrapper">
+				<div class="title" data-content="404">
+					404
+				</div>
+
+				<div class="subtitle" data-content="Oops, the page  you're looking
+					for dosen't exist ">
+				Oops, the page  you're looking
+					for dosen't exist
+				</div>
+				<div class="buttons">
+					
+					<a href="https://www.1keydata.com/css-tutorial/tw/float.php" class="button">
+						Go to hell
+					</a>
+				</div>
+			</div>
+		</body>
+		</html>		

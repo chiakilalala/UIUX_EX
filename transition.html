@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+								<html lang="en">
+								<head>
+									<meta charset="UTF-8">
+									<title>	</title>
+
+
+									<style>	
+										div.eg-css3-transitions,
+										div.eg-normal{
+
+											width: 250px;
+											padding: 15px;
+											background-color: #83cdbe;
+											margin:.5em
+											box-sizing:border-box;
+											color:#fff;
+											padding: 20px;
+
+										}
+										div.eg-css3-transitions:hover,
+										div.eg-normal:hover{
+											width: 300px;	
+										}
+										div.eg-css3-transitions{
+											-webkit-transition: width 1s;
+											-o-transition: width 1s;
+											transition: width 1s;
+										}		
+										div.eg-normal{
+										
+											margin-top:30px;
+										}
+										.slider{
+											margin:30px auto;
+											width: 400px;
+											height:280px;
+											position: relative;
+											border:20px solid;
+											border-color:#fff;
+											border-bottom-width:100px;
+											background-color: #f5f5f5;
+											box-shadow: #666 0 0 5px;  
+
+										}
+										.slider div{
+											position: absolute;
+											top:0px;
+											left: 0px;
+											opacity: 0;
+											-webkit-filter:alpha(opacity=0);
+											-moz-filter:alpha(opacity=0);
+											-ms-filter:alpha(opacity=0);
+											-o-filter:alpha(opacity=0);
+											filter:alpha(opacity=0);
+										}
+
+
+										/*動畫*/
+
+										.slider div{
+											-webkit-animation:round 25s linear infinite;
+											animation:round 25s linear infinite;
+
+										}
+
+										@-webkit-keyframes round{
+
+											4%{
+												opacity: 1;
+												filter:alpha(opacity=100);
+												/*0-1秒 淡入 */
+											}
+											20%{
+												opacity: 1;
+												filter:alpha(opacity=100);
+											}/*1-5秒 淡入 */
+
+											24%{
+												opacity: 0;
+												filter:alpha(opacity=100);
+											}//* 5-6秒淡出*/
+
+										}
+
+											@keyframes round{
+
+											4%{
+												opacity: 1;
+												filter:alpha(opacity=100);
+												/*0-1秒 淡入 */
+											}
+											20%{
+												opacity: 1;
+												filter:alpha(opacity=100);
+											}/*1-5秒 淡入 */
+
+											24%{
+												opacity: 0;
+												filter:alpha(opacity=100);
+											}//* 5-6秒淡出*/
+
+										}
+
+										.slider .info{
+
+											color:#000;
+											background: #fff;
+											position: absolute;
+											left: 0%;
+											top:280px;
+											width: 400px;
+											height: 100px;
+											font-size:25px;
+											text-align:center;
+											line-height: 80px;
+											-webkit-transform: scaleY(0);
+											-ms-transform:scaleY(0);
+											transform:scaleY(0);
+											-webkit-transition:all 0.5s ease-in-out;
+											transition:all 0.5s ease-in-out;
+
+										}
+										.slider:hover .info{
+											width: 100%;
+											-webkit-transform:scaleY(1);
+        									-ms-transform:scaleY(1);
+            								transform:scaleY(1);
+
+										}
+
+										.slider div:nth-child(5){
+											-webkit-animation-delay:0s; 
+											-o-animation-delay:0s; 
+											animation-delay:0s; 
+										}
+
+										.slider div:nth-child(4){
+											-webkit-animation-delay:5s; 
+											-o-animation-delay:5s; 
+											animation-delay:5s; 
+										}
+
+										.slider div:nth-child(3){
+											-webkit-animation-delay:10s; 
+											-o-animation-delay:10s; 
+											animation-delay:10s; 
+										}
+
+										.slider div:nth-child(2){
+											-webkit-animation-delay:15s; 
+											-o-animation-delay:15s; 
+											animation-delay:15s; 
+										}
+
+										.slider div:nth-child(1){
+											-webkit-animation-delay:20s; 
+											-o-animation-delay:20s; 
+											animation-delay:20s; 
+										}
+
+									.slider:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+									</style>
+								</head>
+								<body>
+
+
+									<div class="eg-css3-transitions">	
+
+
+										滑鼠滑上來看看
+										有css3漸變效果
+									</div>
+
+								<div class="eg-normal">	
+
+
+										滑鼠滑上來看看
+										沒有css3漸變效果
+									</div>
+
+
+
+									<div class="slider">
+										
+
+										<div>
+										<img src="img/img1.jpg" alt="pure css3 slider"width="400" height="280">
+											<spandiv class="info">Image Description
+
+										</div>
+										<div>
+										<img src="img/img2.jpg" alt="pure css3 slider"width="400" height="280">
+												<spandiv class="info">Image Description
+
+										</div>
+										<div>
+										<img src="img/img3.jpg" alt="pure css3 slider"width="400" height="280">
+
+												<spandiv class="info">Image Description
+										</div>
+										
+										<div>
+										<img src="img/img4.jpg" alt="pure css3 slider"width="400" height="280">
+											<spandiv class="info">Image Description
+
+										</div>
+										<div>
+										<img src="img/img5.jpg" alt="pure css3 slider"width="400" height="280">
+												<spandiv class="info">Image Description
+												
+										</div>
+
+									</div>
+
+								</body>
+								</html>								

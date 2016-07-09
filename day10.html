@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<title>	</title>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css	">
+			</head>
+			<style>	
+			body,html{
+				height: 100%;		
+
+			}
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family:'Lato',sans-serif;
+			background: linear-gradient(#f7f8fa,#e5eaee);
+		}
+		.fa-facebook{
+			color:#3b5998;
+		
+		}
+		.fa-twitter{
+			color:#55acee;
+		}
+		.fa-instagram{
+			color:#3f729b;	
+		}
+		.social{
+			position: absolute;
+			top: 50%;
+			left: 50%;	
+			width: 840px;	
+			transform: translate(-50%,-50%);
+		}
+		.social > a {
+
+		position: relative;
+		display:inline-block;
+		margin: 40px;	
+		width: 200px;	
+		height: 200px;	
+		cursor: pointer;
+		border-radius: 50px;	
+		}
+		.social>a:hover.front{
+			transform:translateY(-45px);
+		}
+		.social>a.fb:hover.front{
+
+			transform:translate(-45px,-45px);
+		}
+		.social > a.ig:hover.front {
+  		transform: translate(45px, -45px);
+		}
+		.front{
+
+			position: absolute;
+			z-index: 10;
+			width: 200px;
+			height: 200px;	
+			border-radius: 50%;
+			background: #fff;
+			box-shadow: 0px 40px 40px rgba(0,0,0,0.06);
+			transition: all 0.3s ease-out;	
+		}
+
+		.front i.fa{
+			display: block;
+			margin: 80px 0 30px 0;
+			font-size: 32px;
+
+		}
+		.front span{
+
+			color:#ccc;
+		}
+		
+		.behind{
+			position: absolute;
+			z-index: -1;
+			top: 5px ;
+			left: 5px;	
+			text-align: center;
+			width: 190px;	
+			height: 190px;	
+			padding-top: 160px;
+			border-radius: 50%;
+			color:#fff;
+			box-shadow: 0px 0px 40px #b6bec7, 0px 0px 120px #b6bec7;	
+		}
+.fb .behind{
+	padding-right: 40px;
+	background: #3b5998;
+}
+.tw .behind{
+	background: #55acee;
+}
+.ig .behind{
+	padding-left: 40px;
+	background: #3f729b;
+}
+
+			</style>
+			<body>
+				<div class="social">	
+						<a href="https://www.facebook.com/dribbble" class="fb text-center pull-left">
+							
+							<div class="front">
+								<i class="fa fa-facebook"></i><span class="count facebook"></span> 
+								</div>
+									<div class="behind text-right">LIKE US</div>
+										</a>
+
+						<a href="https://twitter.com/dribbble" class="tw text-center pull-left">
+							<div class="front">
+								<i class="fa fa-twitter"></i><span class="count twitter">1</span> 
+							</div>
+							<div class="behind">FOLLOW</div></a>
+											<a href="https://instagram.com/dribbble" class="ig text-center pull-left">
+							<div class="front">
+								 <i class="fa fa-instagram"></i><span class="count instagram"></span> 
+							</div>
+							<div class="behind text-left">FOLLOW</div></a></div>
+									
+
+				</div>
+			</body>
+			</html>			

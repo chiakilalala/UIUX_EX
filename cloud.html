@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+
+
+		body {
+	background: #00b4ff;
+	color: #333;
+	font: 100% Arial, Sans Serif;
+
+}
+
+		.cloud{
+
+			width: 360px;
+			height:120px;
+			background-color:#f2f2f2;
+			border:3px solid #ccc;
+			border-top:none;
+			border-radius:60px;
+			position:absolute;
+		
+		   left:170px;
+		   top: 200px;
+		}
+		
+		.cloud::before,.cloud::after{
+			content:'';
+			position: absolute;
+			background-color:#f2f2f2;
+			border:3px solid #ccc;
+			border-radius: 50%;
+			z-index:-1;
+		}
+		.cloud::after{
+	
+		top: -50px;
+		left: 50px;
+		width: 120px;
+		height: 120px;
+		border-left:3px solid #ccc;
+		border:none;
+		z-index:-1;
+
+		}
+
+.cloud::before{
+
+
+	top: -90px;
+	right: 50px;
+	width: 180px;
+	height: 180px;
+	}
+
+.c2{
+
+	width: 160px;
+	height: 60px;
+	left: 50px;
+	top: 100px;
+	background-image:linear-gradient(#fcc 10%, #fc3 100%);
+}
+.c2.cloud::after{
+
+	top: -20px;
+	left: 30px;
+	width: 50px;
+	height: 90px;
+	border:none;
+	background:#fcc;
+	-webkit-transform: rotate(-30deg);
+}
+.c2.cloud::before{
+	top:-40px;
+	right:30px;
+	width: 80px;
+	height:80px;
+	border:none;
+	background:#fcc;
+}
+.c3{
+	width:160px;
+	height:66px;
+	left:500px;
+	top: 200px;
+	border:none;
+	background-image:linear-gradient(#fcc 10%,#fc3 100%);
+}
+.c3.cloud::after{
+	top: -40px;
+	left:30px;
+	width:80px;
+	height:80px;
+	border:none;
+	background:#fcc;
+}
+.c3.cloud::before{
+	top:-10px;
+	right:20px;
+	width:50px;
+	height:30px;
+	border:none;
+	background:#fcc;
+	-webkit-transform: rotate(-20deg);
+
+}
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud  {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+ .cloud{
+	-webkit-animation: animateCloud 12s linear infinite;
+	-moz-animation: animateCloud 12s linear infinite;
+	animation: animateCloud 12s linear infinite;
+	
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	transform: scale(0.55);
+}
+
+.x2 {
+	-webkit-animation: animateCloud 14s linear infinite;
+	-moz-animation: animateCloud 14s linear infinite;
+	animation: animateCloud 14s linear infinite;
+	
+	}
+
+		</style>
+	</head>
+	<body>
+				<div class="cloud animateCloud  "></div>
+				<div class="cloud c2 animateCloud x2 "></div>
+				<div class="cloud c3 animateCloud "></div>
+	</body>
+	</html>	
